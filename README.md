@@ -62,3 +62,10 @@ To use our salary prediction model, you can follow these steps:
 2. Install the required libraries listed in the `requirements.txt` file.
 3. Run the provided Jupyter notebook or Python script to load the model and make predictions on new data.
 
+## Reproducibility and Validation
+
+Keep a held-out test set separate from model selection and hyperparameter tuning. Compare candidate regressors using MAE, RMSE, and R-squared, and inspect residuals and predicted-versus-actual plots. Record the actual values produced by the notebook rather than relying on illustrative claims.
+
+## Data Considerations
+
+Salary data can contain missing values, inconsistent job titles, and differences across location, seniority, and experience. Document cleaning decisions and consider whether sensitive or potentially unfair attributes are appropriate for the intended analysis.
