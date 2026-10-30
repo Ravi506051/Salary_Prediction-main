@@ -75,3 +75,9 @@ Salary data can contain missing values, inconsistent job titles, and differences
 Keep a held-out test set separate from tuning. Report MAE, RMSE, and R-squared from the actual run, inspect residuals, and document how missing salary and experience values were handled.
 
 For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
+
+### Technical Deep Dive
+
+Keep the final test set separate from GridSearchCV so the reported result is not biased by hyperparameter selection. Use a preprocessing-and-regression Pipeline, compare Linear Regression and tree ensembles on the same folds, and inspect residuals by job title and experience range. Report MAE/RMSE in the salary dataset's actual currency and pay-period units.
+
+Document how missing values and rare job titles are handled. Consider whether sensitive attributes are appropriate for the intended analysis, and avoid presenting feature importance as proof of causation.
