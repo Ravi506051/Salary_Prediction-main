@@ -69,3 +69,9 @@ Keep a held-out test set separate from model selection and hyperparameter tuning
 ## Data Considerations
 
 Salary data can contain missing values, inconsistent job titles, and differences across location, seniority, and experience. Document cleaning decisions and consider whether sensitive or potentially unfair attributes are appropriate for the intended analysis.
+
+## Project Development Notes
+
+Keep a held-out test set separate from tuning. Report MAE, RMSE, and R-squared from the actual run, inspect residuals, and document how missing salary and experience values were handled.
+
+For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
