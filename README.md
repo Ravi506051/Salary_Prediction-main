@@ -81,3 +81,11 @@ For reproducible updates, record the dataset or upstream version, environment an
 Keep the final test set separate from GridSearchCV so the reported result is not biased by hyperparameter selection. Use a preprocessing-and-regression Pipeline, compare Linear Regression and tree ensembles on the same folds, and inspect residuals by job title and experience range. Report MAE/RMSE in the salary dataset's actual currency and pay-period units.
 
 Document how missing values and rare job titles are handled. Consider whether sensitive attributes are appropriate for the intended analysis, and avoid presenting feature importance as proof of causation.
+
+## Reproducibility and Responsible Interpretation
+
+- Document the dataset source, collection date, salary currency, pay period, and definitions of education, job title, and experience.
+- Fit imputers, encoders, and feature transformations on training data only; use a held-out test set for final evaluation.
+- Report actual MAE, RMSE, and R-squared values and compare them with a simple baseline.
+- Inspect residuals across job titles and experience ranges to identify uneven error patterns.
+- Salary estimates are dataset-dependent and should not be interpreted as guaranteed compensation or evidence of causal effects.
