@@ -89,3 +89,11 @@ Document how missing values and rare job titles are handled. Consider whether se
 - Report actual MAE, RMSE, and R-squared values and compare them with a simple baseline.
 - Inspect residuals across job titles and experience ranges to identify uneven error patterns.
 - Salary estimates are dataset-dependent and should not be interpreted as guaranteed compensation or evidence of causal effects.
+
+## Regression Engineering Notes
+
+- Define the salary target, currency, pay period, and feature units before training.
+- Compare a simple baseline with regression models using a held-out test set.
+- Use MAE and RMSE to express prediction error in salary units, and report R-squared as a complementary metric.
+- Fit encoders, imputers, and scalers inside a pipeline to avoid leakage.
+- Inspect residuals and document dataset coverage; salary predictions are estimates and may not generalize across regions or roles.
