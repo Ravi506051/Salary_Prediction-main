@@ -97,3 +97,10 @@ Document how missing values and rare job titles are handled. Consider whether se
 - Use MAE and RMSE to express prediction error in salary units, and report R-squared as a complementary metric.
 - Fit encoders, imputers, and scalers inside a pipeline to avoid leakage.
 - Inspect residuals and document dataset coverage; salary predictions are estimates and may not generalize across regions or roles.
+
+## Reproducibility and Fairness Checks
+
+- Document the dataset source, collection date, currency, pay period, and meaning of each input feature.
+- Compare regression models on a held-out split and report measured MAE, RMSE, and R-squared values.
+- Inspect residuals and subgroup errors; check whether sensitive or proxy variables create misleading patterns.
+- Present predictions as approximate estimates, not guaranteed compensation or hiring recommendations.
