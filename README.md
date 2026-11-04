@@ -34,3 +34,15 @@ Salary estimates depend on dataset coverage, geography, time period, currency an
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Regression analysis
+- feature engineering
+- model comparison
+- GridSearchCV
+- MAE/RMSE evaluation.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
