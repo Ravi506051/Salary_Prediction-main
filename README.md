@@ -46,3 +46,10 @@ Salary estimates depend on dataset coverage, geography, time period, currency an
 ## Portfolio Context
 
 This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
+
+## Regression Evaluation
+
+- Compare a simple baseline with candidate regression models using the same data split.
+- Use MAE and RMSE to describe prediction error, and R-squared as a complementary measure.
+- Check residuals and subgroup errors to identify systematic under- or over-estimation.
+- Salary estimates depend on dataset coverage, geography, date, and role definitions; they are not guaranteed compensation offers.
