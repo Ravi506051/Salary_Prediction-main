@@ -41,4 +41,4 @@ Salary estimates depend on dataset coverage, geography, time period, currency an
 
 ## Run note
 
-The notebook and `Salary Prediction.py` currently reference `C:\\Users\\acer\\Downloads\\Salary_Data.csv`. After cloning, change that path to the repository file, for example `pd.read_csv("Salary_Data.csv")`, before running. Report only metrics reproduced from the current data split; salary estimates are not guaranteed compensation.
+The notebook and `Salary Prediction.py` currently reference `C:/Users/acer/Downloads/Salary_Data.csv`. After cloning, change that path to the repository file, for example `pd.read_csv("Salary_Data.csv")`, before running. Report only metrics reproduced from the current data split; salary estimates are not guaranteed compensation.
