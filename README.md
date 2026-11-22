@@ -35,21 +35,10 @@ Salary estimates depend on dataset coverage, geography, time period, currency an
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
 
-## Skills Demonstrated
+## Dataset and workflow
 
-- Regression analysis
-- feature engineering
-- model comparison
-- GridSearchCV
-- MAE/RMSE evaluation.
+`Salary_Data.csv` contains age, gender, education level, job title, years of experience, and salary. The notebook cleans missing rows, groups infrequent job titles, explores the data, encodes categorical fields, then compares linear regression, decision tree, and random forest models with a 25% test split and cross-validation.
 
-## Portfolio Context
+## Run note
 
-This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
-
-## Regression Evaluation
-
-- Compare a simple baseline with candidate regression models using the same data split.
-- Use MAE and RMSE to describe prediction error, and R-squared as a complementary measure.
-- Check residuals and subgroup errors to identify systematic under- or over-estimation.
-- Salary estimates depend on dataset coverage, geography, date, and role definitions; they are not guaranteed compensation offers.
+The notebook and `Salary Prediction.py` currently reference `C:\\Users\\acer\\Downloads\\Salary_Data.csv`. After cloning, change that path to the repository file, for example `pd.read_csv("Salary_Data.csv")`, before running. Report only metrics reproduced from the current data split; salary estimates are not guaranteed compensation.
